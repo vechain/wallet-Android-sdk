@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Vechain wallet SDK provides a series of functional interface can help the Android developers, for example: developers to quickly create the purse, the private key signature, call vechain block interface, data on the chain, and convenient call vechain connex.
+Vechain wallet SDK provides a series of functional interfaces that can help the Android developers, for example: developers can quickly create the purse, the private key signature, call the vechain block interface, data on the chain, and conveniently call vechain connex.
 
 #### Features:
 
@@ -59,7 +59,7 @@ protected void attachBaseContext(Context base) {
         WalletUtils.setNodeUrl(NodeUrl.MAIN_NODE);
  }
 ```
-When app is test, it is set as a test net environment:
+When app is in testing, it is set as a test net environment:
 ```java
 WalletUtils.setNodeUrl(NodeUrl.TEST_NODE);
 ```
