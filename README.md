@@ -79,7 +79,7 @@ Refer to the following API for more detailed usage
 
 ## API Reference：
 
-[API Reference](https://vit.digonchain.com/vechain-mobile-apps/android-wallet-sdk/blob/master/API%20Reference.md) for VeChain Android app developers
+[API Reference](https://github.com/vechain/wallet-Android-sdk/blob/master/API%20Reference.md) for VeChain Android app developers
 
 
 
