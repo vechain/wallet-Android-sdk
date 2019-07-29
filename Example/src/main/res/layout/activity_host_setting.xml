@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bdbdbd"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar_layout" />
+
+    <RelativeLayout
+        android:id="@+id/layout_host_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/white"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp">
+
+        <EditText
+            android:id="@+id/inputHostName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/host_setting_input_name_hint"
+            android:paddingBottom="18dp"
+            android:paddingEnd="14dp"
+            android:paddingTop="18dp"
+            android:textColorHint="@color/color_bdbdbd"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/white"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp">
+
+        <EditText
+            android:id="@+id/inputHost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/host_setting_input_hint"
+            android:paddingBottom="18dp"
+            android:paddingEnd="14dp"
+            android:paddingTop="18dp"
+            android:textColorHint="@color/color_bdbdbd"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/dialog_confirm" />
+
+
+</LinearLayout>

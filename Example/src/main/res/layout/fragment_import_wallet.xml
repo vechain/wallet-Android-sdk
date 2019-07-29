@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/contentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/wallet_import_content_editText"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:background="@android:color/white"
+        android:gravity="left|top"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/color_202c56"
+        android:textColorHint="@color/color_bdbdbd"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:hint="@string/create_wallet_hint_password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textColor="@color/color_202c56"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/confirmImport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/import_wallet_confirm"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

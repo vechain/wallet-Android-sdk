@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f9fafc"
+    android:orientation="vertical">
+
+    <!--title bar-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp">
+
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:textColor="@color/color_202c56"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/selectedNetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:textColor="@color/color_202c56"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+    <!--Enter URL and click Open Web Page-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp">
+
+        <Button
+            android:id="@+id/go"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/manage_wallet_delete_ok" />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/go"
+            android:lines="1"
+            android:singleLine="true"
+            android:hint="@string/web_url_input_hint"
+            android:padding="5dp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/keystore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@android:color/white"
+        android:drawablePadding="8dp"
+        android:drawableEnd="@drawable/icon_arrow_right"
+        android:padding="10dp"
+        android:textColor="@color/color_202c56"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/home_asset_key"
+        android:textColor="@color/color_202c56"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/vetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/logo_list"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="VET" />
+
+        <TextView
+            android:id="@+id/vetBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="@color/color_898cd3"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/vthoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/thunder_x_node"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="VTHO" />
+
+        <TextView
+            android:id="@+id/vthoBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="@color/color_898cd3"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

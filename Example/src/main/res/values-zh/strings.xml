@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">钱包Demo</string>
+
+    <string name="dialog_confirm">确认</string>
+    <string name="dialog_progress">请稍后…</string>
+    <string name="no_network_hint">网络连接异常，请检查网络设置</string>
+
+    <string name="no_wallet_create">创建钱包</string>
+    <string name="no_wallet_import">导入钱包</string>
+
+    <string name="home_asset_wallet_address">钱包地址：</string>
+    <string name="home_asset_key">资产列表</string>
+
+    <string name="create_wallet_hint_password">请输入钱包密码</string>
+    <string name="create_wallet_confirm">输入密码点击创建钱包</string>
+    <string name="create_wallet_success">创建成功！</string>
+    <string name="create_wallet_mnemonic">助记词：</string>
+    <string name="create_wallet_keystore">Keystore：</string>
+    <string name="create_wallet_complete">完成</string>
+
+    <string name="import_wallet_item1">助记词</string>
+    <string name="import_wallet_item2">Keystore</string>
+    <string name="import_wallet_confirm">确认导入</string>
+    <string name="import_wallet_please_input_mnemonic">请输入助记词</string>
+    <string name="import_wallet_please_input_keystore">请输入Keystore</string>
+    <string name="import_wallet_mnemonic_word_error">助记词数量不正确</string>
+    <string name="import_wallet_mnemonic_word_format">无效的助记词</string>
+    <string name="import_wallet_fail">导入钱包失败</string>
+    <string name="import_wallet_please_input_keystore_error">Keystore错误</string>
+
+    <string name="manage_wallet_change_password">修改钱包密码</string>
+    <string name="manage_wallet_export_keystore">导出Keystore</string>
+    <string name="manage_wallet_delete">删除钱包</string>
+    <string name="manage_wallet_delete_tip">提示</string>
+    <string name="manage_wallet_delete_message">您确认要删除钱包？</string>
+    <string name="manage_wallet_delete_ok">确认</string>
+    <string name="manage_wallet_delete_cancel">取消</string>
+
+    <string name="modify_password_current_password">当前密码</string>
+    <string name="modify_password_first_new_password">新密码</string>
+    <string name="modify_password_sencond_new_password">重复密码</string>
+    <string name="modify_password_confirm">确认</string>
+
+    <string name="modify_password_old_error">当前密码错误</string>
+    <string name="modify_password_new_error">新密码错误</string>
+    <string name="modify_password_failr">修改失败！</string>
+
+
+    <string name="transfer_coin_adjust_cost">调整</string>
+    <string name="transfer_coin_trans_cost_default">交易费用： %1$s VTHO</string>
+    <string name="transfer_coin_trans_cost">交易费用： %1$s VTHO</string>
+    <string name="transfer_coin_balance">余额：</string>
+    <string name="transfer_coin_amount_title">转账金额</string>
+    <string name="transfer_coin_vx_address_hint">唯链雷神钱包地址(0x开头)</string>
+    <string name="transfer_coin_address_title">收款人地址</string>
+    <string name="transfer_coin_input_amount_hint">请输入转账金额</string>
+
+    <string name="transfer_coin_next_page">下一步</string>
+    <string name="transfer_coin_quick">快</string>
+    <string name="transfer_coin_slow">慢</string>
+    <string name="transfer_coin_title">转账</string>
+    <string name="transfer_coin_to_from_same_error">收款人地址不能是自己</string>
+    <string name="transfer_coin_value_empty_error">请输入转账金额</string>
+    <string name="transfer_coin_to_address_error_empty">唯链雷神钱包地址是以0x为开头的42位字符</string>
+    <string name="transfer_coin_to_address_error_format">唯链雷神钱包地址是以0x为开头的42位字符</string>
+    <string name="transfer_wallet_password_error">钱包密码错误</string>
+    <string name="transfer_wallet_chaintag_error">获取ChainTag失败</string>
+    <string name="transfer_wallet_blockref_error">获取blockReference失败</string>
+    <string name="transfer_wallet_send_fail">发送交易失败</string>
+    <string name="transfer_wallet_send_balance_not_enough">余额不足</string>
+    <string name="transfer_wallet_value_not_negative">转账额不能为负数</string>
+    <string name="transfer_wallet_password_empty_error">请输入钱包密码</string>
+
+    <string name="transfer_coin_value_format_error">请输入正确的转账金额</string>
+    <string name="transaction_value_not_zero">转账金额不能为零</string>
+    <string name="address_char_not_hex">请输入符合唯链雷神钱包规则的地址</string>
+
+    <string name="transfer_wallet_fail">交易失败</string>
+    <string name="transfer_wallet_success">交易已经发出txId:%1$s</string>
+
+
+    <!--web-->
+    <string name="web_url_input_hint">输入DApp的URL</string>
+
+    <string name="host_select_txt">选择网络</string>
+    <string-array name="host_name_array">
+        <item>正式节点</item>
+        <item>测试节点</item>
+        <item>添加自定义节点</item>
+    </string-array>
+    <string-array name="host_name_tag_array">
+        <item>（正式）</item>
+        <item>（测试）</item>
+        <item>（自定义）</item>
+    </string-array>
+
+    <string name="host_info_test">测试网络</string>
+    <string name="host_info_release">正式网络</string>
+    <string name="host_info_test_msg">测试网络连接雷神测试网络</string>
+    <string name="host_info_release_msg">正式网络连接雷神正式网络</string>
+
+    <string name="host_setting_title">添加网络</string>
+    <string name="host_setting_input_name_hint">输入名称</string>
+    <string name="host_setting_input_hint">输入url</string>
+
+    <string name="connex_certificate_title">认证授权</string>
+
+</resources>

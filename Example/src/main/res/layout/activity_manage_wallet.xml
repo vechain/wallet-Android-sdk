@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f9fafc">
+
+
+    <LinearLayout
+        android:id="@+id/icon_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/tv_wallet_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="@color/color_bdbdbd"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/split_view1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/color_f6f6f6"
+        app:layout_constraintLeft_toLeftOf="@id/icon_layout"
+        app:layout_constraintTop_toBottomOf="@id/icon_layout" />
+
+    <TextView
+        android:id="@+id/tv_change_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:drawableEnd="@drawable/icon_arrow_right"
+        android:paddingBottom="18dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="18dp"
+        android:text="@string/manage_wallet_change_password"
+        android:textColor="@color/color_202c56"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/split_view1" />
+
+    <TextView
+        android:id="@+id/tv_export_keystore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:drawableEnd="@drawable/icon_arrow_right"
+        android:paddingBottom="18dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="18dp"
+        android:text="@string/manage_wallet_export_keystore"
+        android:textColor="@color/color_202c56"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_change_password" />
+
+    <TextView
+        android:id="@+id/wallet_import_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/white"
+        android:gravity="left|top"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/color_202c56"
+        android:textColorHint="@color/color_bdbdbd"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_export_keystore" />
+
+
+    <Button
+        android:id="@+id/btn_delete_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/manage_wallet_delete"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

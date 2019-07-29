@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">WalletDemo</string>
+
+    <string name="dialog_confirm">Confirm</string>
+    <string name="dialog_progress">Loading…</string>
+    <string name="no_network_hint">No internet access</string>
+
+    <string name="no_wallet_create">Create Wallet</string>
+    <string name="no_wallet_import">Import Wallet</string>
+
+    <string name="home_asset_wallet_address">Wallet address:</string>
+    <string name="home_asset_key">List of assets</string>
+
+    <string name="create_wallet_hint_password">Please enter your wallet password</string>
+    <string name="create_wallet_confirm">Enter Password and Click Create Wallet</string>
+    <string name="create_wallet_success">Create success!</string>
+    <string name="create_wallet_mnemonic">Mnemonic:</string>
+    <string name="create_wallet_keystore">Keystore:</string>
+    <string name="create_wallet_complete">Complete</string>
+
+    <string name="import_wallet_item1">Mnemonic Phrases</string>
+    <string name="import_wallet_item2">Keystore</string>
+    <string name="import_wallet_confirm">Confirm import</string>
+    <string name="import_wallet_please_input_mnemonic">Please enter mnemonics</string>
+    <string name="import_wallet_please_input_keystore">Please enter Keystore</string>
+    <string name="import_wallet_mnemonic_word_error">The quantity of mnemonic phrases is not 12</string>
+    <string name="import_wallet_mnemonic_word_format">Invalid mnemonic phrases</string>
+    <string name="import_wallet_fail">Import failed</string>
+    <string name="import_wallet_please_input_keystore_error">Keystore error</string>
+
+    <string name="manage_wallet_change_password">Modify the wallet password</string>
+    <string name="manage_wallet_export_keystore">Export Keystore</string>
+    <string name="manage_wallet_delete">Delete Wallet</string>
+    <string name="manage_wallet_delete_tip">Tips</string>
+    <string name="manage_wallet_delete_message">Are you sure you want to delete your wallet?</string>
+    <string name="manage_wallet_delete_ok">Confirm</string>
+    <string name="manage_wallet_delete_cancel">Cancel</string>
+
+    <string name="modify_password_current_password">Current password</string>
+    <string name="modify_password_first_new_password">New password</string>
+    <string name="modify_password_sencond_new_password">Repeat password</string>
+    <string name="modify_password_confirm">Confirm</string>
+
+    <string name="modify_password_old_error">Current password error</string>
+    <string name="modify_password_new_error">New password error</string>
+    <string name="modify_password_failr">Modification failed!</string>
+
+    <string name="transfer_coin_adjust_cost">Change</string>
+    <string name="transfer_coin_trans_cost_default">Tx Fee: %1$s VTHO</string>
+    <string name="transfer_coin_trans_cost">Tx Fee: %1$s VTHO</string>
+    <string name="transfer_coin_balance">Balance:</string>
+    <string name="transfer_coin_amount_title">Amount</string>
+    <string name="transfer_coin_vx_address_hint">The VeChainThor wallet address is 42 characters in length starting with 0x</string>
+    <string name="transfer_coin_address_title">Receiver\'s Address</string>
+    <string name="transfer_coin_input_amount_hint">Amount</string>
+
+    <string name="transfer_coin_next_page">Next</string>
+    <string name="transfer_coin_quick">Fast</string>
+    <string name="transfer_coin_slow">Slow</string>
+    <string name="transfer_coin_title">Transfer</string>
+    <string name="transfer_coin_to_from_same_error">The receiver\'s address cannot be the same as sender\'s address</string>
+    <string name="transfer_coin_value_empty_error">Please enter the amount</string>
+    <string name="transfer_coin_to_address_error_empty">Please enter the address</string>
+    <string name="transfer_coin_to_address_error_format">The VeChainThor wallet address is 42 characters in length starting with 0x</string>
+    <string name="transfer_wallet_password_error">Password Incorrect</string>
+    <string name="transfer_wallet_chaintag_error">Get ChainTag Failed</string>
+    <string name="transfer_wallet_blockref_error">Get blockReference Failed</string>
+    <string name="transfer_wallet_send_fail">Send transaction failed</string>
+    <string name="transfer_wallet_send_balance_not_enough">Insufficient Balance</string>
+    <string name="transfer_wallet_value_not_negative">The amount cannot less than 0</string>
+    <string name="transfer_wallet_password_empty_error">Please enter wallet password</string>
+
+    <string name="transfer_coin_value_format_error">Input correct amount</string>
+    <string name="transaction_value_not_zero">Transaction amount cannot be 0</string>
+    <string name="address_char_not_hex">Input valid VeChainThor address.</string>
+
+    <string name="transfer_wallet_fail">Transaction failure</string>
+    <string name="transfer_wallet_success">Transactions have been sent, txId:%1$s</string>
+
+    <!--web-->
+    <string name="web_url_input_hint">Enter DApp\'s URL</string>
+
+    <string name="host_select_txt">Select network</string>
+    <string-array name="host_name_array">
+        <item>Release Node</item>
+        <item>Test Node</item>
+        <item>Add custom Node</item>
+    </string-array>
+    <string-array name="host_name_tag_array">
+        <item>(Release)</item>
+        <item>(Test)</item>
+        <item>(Custom)</item>
+    </string-array>
+
+    <string name="host_info_test">Test Node</string>
+    <string name="host_info_release">Release Node</string>
+    <string name="host_info_test_msg">Test Node Connecting VeChain Test Network</string>
+    <string name="host_info_release_msg">Release Node Connecting VeChain Release Network</string>
+
+    <string name="host_setting_title">Add network</string>
+    <string name="host_setting_input_name_hint">Input name</string>
+    <string name="host_setting_input_hint">Input URL</string>
+
+    <string name="connex_certificate_title">Certificate Authority</string>
+
+</resources>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f9fafc"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/white"
+        android:paddingBottom="20dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/address_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transfer_coin_address_title"
+            android:textColor="@color/color_202c56"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_title_textview"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/select_address_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:padding="10dp"
+                android:src="@drawable/icon_select_address" />
+
+            <EditText
+                android:id="@+id/receiver_wallet_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/select_address_button"
+                android:background="@null"
+                android:digits="abcdefABCDEFXx0123456789"
+                android:hint="@string/transfer_coin_vx_address_hint"
+                android:inputType="text"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_202c56"
+                android:textColorHint="@color/color_bdbdbd"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:background="@android:color/white"
+        android:paddingEnd="10dp"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/transfer_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transfer_coin_amount_title"
+            android:textColor="@color/color_202c56"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/token_amount_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/transfer_title_textview">
+
+            <LinearLayout
+                android:id="@+id/select_token_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/tokenIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/logo_list" />
+
+                <TextView
+                    android:id="@+id/select_token_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_202c56"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/transfer_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_toStartOf="@id/select_token_layout"
+                android:background="@null"
+                android:hint="@string/transfer_coin_input_amount_hint"
+                android:inputType="numberDecimal"
+                android:maxLength="20"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_202c56"
+                android:textColorHint="@color/color_bdbdbd"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/split_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/token_amount_layout"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/color_f6f6f6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/split_view">
+
+            <TextView
+                android:id="@+id/balance_title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/transfer_coin_balance"
+                android:textColor="@color/color_bdbdbd"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/total_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:padding="6dp"
+                android:textColor="@color/color_898cd3"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/observer_wallet_tip_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="6dp"
+            android:lineSpacingExtra="2dp"
+            android:textColor="@color/color_898cd3"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/transfer_next_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/transfer_coin_next_page"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/observer_wallet_tip_textview"
+            app:layout_goneMarginTop="24dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>
